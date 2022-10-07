@@ -40,7 +40,17 @@ nav {
     }
 }
 
+h3 {
+    font-size: calc(1.3rem + .6vw);
+    font-weight: 900;
+    color: $cherry;
+}
+
 @media (max-width: 575px) {
+    .contenido-gral {
+        grid-template-columns: 1fr;
+
+    }
 
 }
 

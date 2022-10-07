@@ -46,3 +46,7 @@ body{
 .form-gral{
     padding: 30px;
 }
+
+.navbar-nav {
+    gap: 40px;
+}

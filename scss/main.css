@@ -25,4 +25,16 @@ nav > div > div > .actions > .boton {
 }
 nav > div > .logo > img {
   width: 50px;
+}
+
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 900;
+  color: #a42145;
+}
+
+@media (max-width: 575px) {
+  .contenido-gral {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=main.css.map */
