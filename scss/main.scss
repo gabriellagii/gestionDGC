@@ -1,0 +1,41 @@
+@use "global" as *;
+
+nav {
+    background-color: $green-navbar;
+    &>div{
+        &>div{
+            &>ul{
+                &>li{ 
+                    &>.nav-link{
+                        color: $white-txt;
+                        &:hover{
+                            color:$golden;
+                        }
+                    }
+                    & a{
+                        color: $white-txt;
+                        &:hover{
+                            color:$golden;
+                        }
+
+                    }
+                }
+            }
+            &>.actions{
+                &>.boton{
+                    background-color: $golde-dos;
+                    color: $white-txt;
+                    border: 1px solid $golden;
+                    border-radius: 8px;
+                    padding: 12px 14px;
+                }
+            }
+        }
+
+        &>.logo{
+            &>img{
+                width: 50px;
+            }
+        }
+    }
+}
