@@ -8,6 +8,8 @@ nav {
                 &>li{ 
                     &>.nav-link{
                         color: $white-txt;
+                        font-weight: 700;
+                        font-size: 1.25rem;
                         &:hover{
                             color:$golden;
                         }
@@ -16,6 +18,7 @@ nav {
                         color: $white-txt;
                         &:hover{
                             color:$golden;
+                            text-decoration: underline;
                         }
 
                     }

@@ -6,6 +6,8 @@ nav {
 }
 nav > div > div > ul > li > .nav-link {
   color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 nav > div > div > ul > li > .nav-link:hover {
   color: rgb(188, 149, 91);
@@ -15,6 +17,7 @@ nav > div > div > ul > li a {
 }
 nav > div > div > ul > li a:hover {
   color: rgb(188, 149, 91);
+  text-decoration: underline;
 }
 nav > div > div > .actions > .boton {
   background-color: #b58d64;

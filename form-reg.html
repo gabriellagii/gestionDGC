@@ -19,19 +19,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Registrar
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Mandamientos Judiciales y Ministeriales</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Otro</a></li>
-              </ul>
-            </li>
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link">Link</a>
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
             </li>
           </ul>
           <div class="actions">
@@ -41,22 +31,49 @@
       </div>
     </nav>
 
-    <section class="form-gral">
-      <div>
-        <div class="card">
-            <div class="card-header">
-              Registro
+    <section class="form-table">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-header style-header">
+              Registro de Usuario
             </div>
             <div class="card-body">
-              <label>Nombre :</label><input type="text" />
-              <a href="#" class="btn btn-primary">Enviar</a>
+              <form id="form-user">
+                <div class="mb-3 style-card">
+                  <label class="style-label">Nombre: </label><input id="name" class="input-form" type="text" value="" required />
+                  <span class="validity"></span>
+                </div>
+                <div class="mb-3 style-card">
+                  <label class="style-label">Expediente: </label><input id="exp" class="input-form" type="number" required />
+                </div>
+                <div class="mb-3 style-card">
+                  <label class="style-label">Área: </label><input id="area" class="input-form" type="text" required />
+                </div>
+                <div class="mb-3 style-card">
+                  <label class="style-label">Correo Electrónico: </label><input id="email" class="input-form" type="text" required />
+                </div>
+                <div class="mb-3 style-card">
+                  <label class="style-label">Teléfono: </label><input id="phone" class="input-form" type="number" required />
+                </div>
+                <div class="div-button">
+                  <input id="submit_data" value="Enviar" type="submit"> 
+                </div>
+              </form>
+            
             </div>
           </div>
-      </div>
+        </div>
+        <div class="col-sm">
+          <div id="table-users">
+
+          </div>
+        </div>
+      </div> 
     </section>
-    
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./submit.js"></script>
     </body>
 </html>
